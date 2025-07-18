@@ -1,13 +1,44 @@
-// Quotes database
 const quotes = [
-    { text: "Love is composed of a single soul inhabiting two bodies.", author: "Aristotle" },
-    { text: "The best thing to hold onto in life is each other.", author: "Audrey Hepburn" },
-    { text: "We are most alive when we're in love.", author: "John Updike" },
-    { text: "True love stories never have endings.", author: "Richard Bach" },
-    { text: "Love doesn't make the world go round. Love is what makes the ride worthwhile.", author: "Franklin P. Jones" },
-    { text: "If I know what love is, it is because of you.", author: "Hermann Hesse" },
-    { text: "Love is when the other person's happiness is more important than your own.", author: "H. Jackson Brown, Jr." },
-    { text: "The giving of love is an education in itself.", author: "Eleanor Roosevelt" }
+    {
+        text_en: "Love is composed of a single soul inhabiting two bodies.",
+        text_hi: "प्यार एक आत्मा है जो दो जिस्मों में बसती है।",
+        author: "Aristotle / अरस्तू"
+    },
+    {
+        text_en: "The best thing to hold onto in life is each other.",
+        text_hi: "ज़िंदगी में सबसे अच्छी चीज़ एक-दूसरे का साथ होता है।",
+        author: "Audrey Hepburn / ऑड्री हेपबर्न"
+    },
+    {
+        text_en: "We are most alive when we're in love.",
+        text_hi: "हम तब सबसे ज़्यादा जिंदा महसूस करते हैं जब हम प्यार में होते हैं।",
+        author: "John Updike / जॉन अपडाइक"
+    },
+    {
+        text_en: "True love stories never have endings.",
+        text_hi: "सच्ची प्रेम कहानियों का कभी अंत नहीं होता।",
+        author: "Richard Bach / रिचर्ड बाख"
+    },
+    {
+        text_en: "Love doesn't make the world go round. Love is what makes the ride worthwhile.",
+        text_hi: "प्यार दुनिया को नहीं घुमाता, लेकिन प्यार ही सफ़र को खास बनाता है।",
+        author: "Franklin P. Jones / फ्रैंकलिन पी. जोन्स"
+    },
+    {
+        text_en: "If I know what love is, it is because of you.",
+        text_hi: "अगर मुझे प्यार का मतलब पता है, तो वो तुम्हारी वजह से है।",
+        author: "Hermann Hesse / हर्मन हेस्से"
+    },
+    {
+        text_en: "Love is when the other person's happiness is more important than your own.",
+        text_hi: "प्यार तब होता है जब सामने वाले की खुशी आपकी खुशी से ज़्यादा मायने रखती है।",
+        author: "H. Jackson Brown Jr. / एच. जैक्सन ब्राउन जूनियर"
+    },
+    {
+        text_en: "The giving of love is an education in itself.",
+        text_hi: "प्यार देना अपने आप में एक शिक्षा है।",
+        author: "Eleanor Roosevelt / एलेनॉर रूज़वेल्ट"
+    }
 ];
 
 // Messages based on percentage
