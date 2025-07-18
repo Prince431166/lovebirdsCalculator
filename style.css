@@ -309,11 +309,6 @@ body.dark-mode .quote,
 body.dark-mode .quote-author {
   color: #f0f0f0;
 }
-.moon {
-    color: #dcdcdc; /* soft moon grey color */
-}
-
-
 @media (max-width: 768px) {
     header h1 {
         font-size: 2rem;
