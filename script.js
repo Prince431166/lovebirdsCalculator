@@ -69,11 +69,17 @@ const quoteAuthor = document.getElementById('quoteAuthor');
 // Initialize with a random quote
 showRandomQuote();
 
-// Function to show a random quote
 function showRandomQuote() {
     const randomIndex = Math.floor(Math.random() * quotes.length);
-    quoteText.textContent = `"${quotes[randomIndex].text}"`;
-    quoteAuthor.textContent = `- ${quotes[randomIndex].author}`;
+    const quote = quotes[randomIndex];
+
+    quoteText.innerHTML = `
+        <div style="text-align: center;">
+            <p style="font-style: italic;">"${quote.text_hi}"</p>
+            <p style="font-style: italic; font-size: 0.95rem; color: #ffc9dd">"${quote.text_en}"</p>
+        </div>
+    `;
+    quoteAuthor.textContent = `- ${quote.author}`;
 }
 
 // 🛠 New: Consistent Love Percentage Function
