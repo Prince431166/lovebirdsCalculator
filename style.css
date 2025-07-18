@@ -33,6 +33,7 @@ body {
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.18);
     padding: 30px;
+    margin: 0 auto;
 }
 
 header {
@@ -326,4 +327,61 @@ body.dark-mode .message,
 body.dark-mode .quote,
 body.dark-mode .quote-author {
   color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .tagline {
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+
+    .input-group {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .input-box {
+        min-width: 100%;
+    }
+
+    .percentage {
+        font-size: 4rem;
+    }
+
+    .message {
+        font-size: 1.1rem;
+    }
+
+    .love-quotes {
+        padding: 20px;
+    }
+
+    .quote-title {
+        font-size: 1.4rem;
+    }
+
+    .quote {
+        font-size: 1rem;
+    }
+
+    .quote-author {
+        font-size: 1rem;
+    }
+
+    .calculate-btn {
+        font-size: 1.1rem;
+        padding: 15px;
+    }
+
+    .result-section {
+        padding: 20px;
+    }
+
+    .container {
+        padding: 20px;
+    }
 }
