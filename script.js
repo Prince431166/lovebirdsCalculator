@@ -145,14 +145,14 @@ function createHearts() {
     }
 }
 
-// Dark Mode toggle
-const darkToggle = document.getElementById('darkModeToggle');
+// 🌙 Dark Mode using moon icon
+const darkModeIcon = document.getElementById('darkModeIcon');
 
-darkToggle.addEventListener('change', function() {
+darkModeIcon.addEventListener('click', function () {
     document.body.classList.toggle('dark-mode');
 });
 
+// Optional: auto enable if system prefers dark
 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
     document.body.classList.add('dark-mode');
-    darkToggle.checked = true;
 }
