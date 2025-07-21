@@ -43,7 +43,7 @@ header {
 }
 
 header h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: #ff006e;
     text-shadow: 0 0 10px rgba(255, 0, 110, 0.4);
     margin-bottom: 10px;
@@ -56,16 +56,28 @@ header h1 {
     100% { transform: scale(1); }
 }
 
+.main-nav {
+    margin: 15px 0;
+}
+.main-nav a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.main-nav a:hover {
+    color: #ff006e;
+}
+
 .tagline {
     font-size: 1.2rem;
-    color: #fff;
     opacity: 0.9;
-    max-width: 500px;
+    max-width: 600px;
     margin: 0 auto;
     line-height: 1.6;
 }
 
-.input-section {
+.input-section, .result-section, .love-quotes, .content-section {
     background: rgba(255, 255, 255, 0.2);
     border-radius: 20px;
     padding: 30px;
@@ -89,58 +101,53 @@ header h1 {
     display: block;
     margin-bottom: 10px;
     font-size: 1.1rem;
-    color: #fff;
 }
 
-.input-box input {
+.input-box input,
+input[type="date"],
+select {
     width: 100%;
     padding: 15px 20px;
     border-radius: 15px;
     border: none;
     background: rgba(255, 255, 255, 0.85);
     font-size: 1.1rem;
+    color: #333;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
 }
 
-.input-box input:focus {
+.input-box input:focus,
+input[type="date"]:focus,
+select:focus {
     outline: none;
     background: rgba(255, 255, 255, 1);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     transform: translateY(-3px);
 }
 
-.calculate-btn {
+.calculate-btn,
+button {
     width: 100%;
     padding: 18px;
     background: linear-gradient(to right, #ff006e, #ff5e9c);
     border: none;
     border-radius: 15px;
     color: white;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 10px 20px rgba(255, 0, 110, 0.3);
     text-transform: uppercase;
     letter-spacing: 1px;
+    margin-top: 20px;
 }
 
+button:hover,
 .calculate-btn:hover {
     transform: translateY(-5px);
     box-shadow: 0 15px 25px rgba(255, 0, 110, 0.4);
     background: linear-gradient(to right, #ff006e, #ff8e8e);
-}
-
-.result-section {
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 20px;
-    padding: 30px;
-    text-align: center;
-    display: none;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    position: relative;
-    overflow: hidden;
 }
 
 .result-title {
@@ -165,52 +172,9 @@ header h1 {
 
 .message {
     font-size: 1.4rem;
-    margin-bottom: 30px;
+    margin-top: 15px;
     color: #fff;
     line-height: 1.6;
-    min-height: 70px;
-}
-
-.hearts-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    z-index: -1;
-}
-
-.heart {
-    position: absolute;
-    color: rgba(255, 0, 110, 0.6);
-    animation: float 15s linear infinite;
-    font-size: 24px;
-}
-
-@keyframes float {
-    0% {
-        transform: translateY(100vh) rotate(0deg);
-        opacity: 0;
-    }
-    10% {
-        opacity: 1;
-    }
-    90% {
-        opacity: 1;
-    }
-    100% {
-        transform: translateY(-100px) rotate(360deg);
-        opacity: 0;
-    }
-}
-
-.love-quotes {
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 20px;
-    padding: 30px;
-    margin-top: 30px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .quote-title {
@@ -224,7 +188,6 @@ header h1 {
     font-size: 1.2rem;
     font-style: italic;
     text-align: center;
-    color: #fff;
     opacity: 0.9;
     line-height: 1.8;
     padding: 10px;
@@ -238,35 +201,28 @@ header h1 {
     font-weight: bold;
 }
 
+.content-section h2, .content-section h3 {
+    color: #ff006e;
+    margin-bottom: 10px;
+}
+
+.content-section ul {
+    padding-left: 20px;
+    margin: 15px 0;
+}
+.content-section li {
+    margin-bottom: 10px;
+}
+
 footer {
     text-align: center;
-    margin-top: 30px;
     padding-top: 20px;
     color: rgba(255, 255, 255, 0.7);
     border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 30px;
 }
 
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2.5rem;
-    }
-    
-    .input-group {
-        flex-direction: column;
-        gap: 15px;
-    }
-    
-    .percentage {
-        font-size: 4.5rem;
-    }
-    
-    .message {
-        font-size: 1.2rem;
-    }
-}
-
-
-/* 🌙 Dark mode moon icon style */
+/* 🌙 Dark mode icon */
 .dark-toggle-center {
     text-align: center;
     margin-bottom: 15px;
@@ -284,11 +240,6 @@ footer {
     color: #ffd700;
 }
 
-body.dark-mode #darkModeIcon {
-    color: #F5F3CE;
-}
-
-/* 🌙 Dark Mode styles */
 body.dark-mode {
   background: #121212;
   color: #f0f0f0;
@@ -299,7 +250,9 @@ body.dark-mode .container {
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-body.dark-mode .input-box input {
+body.dark-mode .input-box input,
+body.dark-mode input[type="date"],
+body.dark-mode select {
   background: #1f1f1f;
   color: #fff;
 }
@@ -309,68 +262,20 @@ body.dark-mode .quote,
 body.dark-mode .quote-author {
   color: #f0f0f0;
 }
+
+/* 💻 Responsive Design */
 @media (max-width: 768px) {
-    header h1 {
-        font-size: 2rem;
-    }
-
-    .tagline {
-        font-size: 1rem;
-        line-height: 1.4;
-    }
-
-    .input-group {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .input-box {
-        min-width: 100%;
-    }
-
-    .percentage {
-        font-size: 4rem;
-    }
-
-    .message {
-        font-size: 1.1rem;
-    }
-
-    .love-quotes {
-        padding: 20px;
-    }
-
-    .quote-title {
-        font-size: 1.4rem;
-    }
-
-    .quote {
-        font-size: 1rem;
-    }
-
-    .quote-author {
-        font-size: 1rem;
-    }
-
-    .calculate-btn {
-        font-size: 1.1rem;
-        padding: 15px;
-    }
-
-    .result-section {
-        padding: 20px;
-    }
-
-    .container {
-        padding: 20px;
-    }
-}
-a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-a:hover {
-    color: #ff006e;
+    header h1 { font-size: 2rem; }
+    .tagline { font-size: 1rem; line-height: 1.4; }
+    .input-group { flex-direction: column; gap: 15px; }
+    .input-box { min-width: 100%; }
+    .percentage { font-size: 4rem; }
+    .message { font-size: 1.1rem; }
+    .love-quotes { padding: 20px; }
+    .quote-title { font-size: 1.4rem; }
+    .quote { font-size: 1rem; }
+    .quote-author { font-size: 1rem; }
+    .calculate-btn { font-size: 1.1rem; padding: 15px; }
+    .result-section { padding: 20px; }
+    .container { padding: 20px; }
 }
