@@ -375,5 +375,30 @@ a:hover {
     color: #ff006e;
 }
 
+.content-section {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    padding: 30px;
+    margin-top: 40px;
+    color: #fff;
+    line-height: 1.8;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.content-section h2, .content-section h3 {
+    color: #ff006e;
+    margin-bottom: 15px;
+}
+
+.content-section ul {
+    padding-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.content-section li {
+    margin-bottom: 10px;
+}
+
 
 
