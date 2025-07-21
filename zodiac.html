@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zodiac Match - Love Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class='fas fa-star'></i> Zodiac Love Match</h1>
+        </header>
+        <section class="content-section">
+            <p>Select your zodiac signs to see your compatibility!</p>
+            <form id="zodiacForm">
+                <label for="sign1">Your Zodiac Sign:</label>
+                <select id="sign1">
+                    <option value="">--Select--</option>
+                    <option value="aries">Aries</option>
+                    <option value="taurus">Taurus</option>
+                    <option value="gemini">Gemini</option>
+                    <option value="cancer">Cancer</option>
+                    <option value="leo">Leo</option>
+                    <option value="virgo">Virgo</option>
+                    <option value="libra">Libra</option>
+                    <option value="scorpio">Scorpio</option>
+                    <option value="sagittarius">Sagittarius</option>
+                    <option value="capricorn">Capricorn</option>
+                    <option value="aquarius">Aquarius</option>
+                    <option value="pisces">Pisces</option>
+                </select>
+
+                <label for="sign2">Partner's Zodiac Sign:</label>
+                <select id="sign2">
+                    <option value="">--Select--</option>
+                    <option value="aries">Aries</option>
+                    <option value="taurus">Taurus</option>
+                    <option value="gemini">Gemini</option>
+                    <option value="cancer">Cancer</option>
+                    <option value="leo">Leo</option>
+                    <option value="virgo">Virgo</option>
+                    <option value="libra">Libra</option>
+                    <option value="scorpio">Scorpio</option>
+                    <option value="sagittarius">Sagittarius</option>
+                    <option value="capricorn">Capricorn</option>
+                    <option value="aquarius">Aquarius</option>
+                    <option value="pisces">Pisces</option>
+                </select>
+
+                <button type="button" onclick="checkZodiacMatch()">Check Match</button>
+            </form>
+            <p id="zodiacResult" class="message" style="margin-top: 20px;"></p>
+        </section>
+        <footer>
+            <p>Made with ❤️ by Prince Kumar</p>
+        </footer>
+    </div>
+
+    <script>
+        function checkZodiacMatch() {
+            const sign1 = document.getElementById('sign1').value;
+            const sign2 = document.getElementById('sign2').value;
+            const result = document.getElementById('zodiacResult');
+
+            if (!sign1 || !sign2) {
+                result.textContent = 'Please select both zodiac signs.';
+                return;
+            }
+
+            if (sign1 === sign2) {
+                result.textContent = 'Wow! Same signs often share deep understanding. Strong match!';
+            } else {
+                result.textContent = `The match between ${sign1} and ${sign2} can be exciting! Communication and trust matter.`;
+            }
+        }
+    </script>
+</body>
+</html>
