@@ -1,50 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Birthday Match - Love Calculator</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Birthday Match</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1><i class='fas fa-birthday-cake'></i> Birthday Love Match</h1>
-        </header>
-        <section class="content-section">
-            <p>Enter your and your partner's birthdates to see your compatibility score!</p>
-            <form id="birthdayForm">
-                <label for="bday1">Your Birthday:</label>
-                <input type="date" id="bday1">
+  <div class="container">
+    <header>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+      <h1>🎂 Birthday Match</h1>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html">Love Name Match</a>
+        <a href="birthday.html">Birthday Match</a>
+        <a href="zodiac.html">Zodiac Match</a>
+      </nav>
+    </header>
 
-                <label for="bday2">Partner's Birthday:</label>
-                <input type="date" id="bday2">
-
-                <button type="button" onclick="calculateBirthdayMatch()">Check Match</button>
-            </form>
-            <p id="bdayResult" class="message" style="margin-top: 20px;"></p>
-        </section>
-        <footer>
-            <p>Made with ❤️ by Prince Kumar</p>
-        </footer>
+    <div class="input-section">
+      <div class="input-box">
+        <label for="bday1">Your Birthday:</label>
+        <input type="date" id="bday1" />
+      </div>
+      <div class="input-box">
+        <label for="bday2">Partner's Birthday:</label>
+        <input type="date" id="bday2" />
+      </div>
+      <button class="calculate-btn" onclick="calculateBirthdayMatch()">Check Match</button>
     </div>
 
-    <script>
-        function calculateBirthdayMatch() {
-            const bday1 = new Date(document.getElementById('bday1').value);
-            const bday2 = new Date(document.getElementById('bday2').value);
-            const result = document.getElementById('bdayResult');
+    <div class="result-section">
+      <h2 class="result-title">Birthday Compatibility</h2>
+      <div class="percentage" id="percentageDisplay">0%</div>
+      <div class="message" id="messageDisplay"></div>
+    </div>
 
-            if (!bday1.getTime() || !bday2.getTime()) {
-                result.textContent = 'Please enter both birthdays.';
-                return;
-            }
+    <footer><p>❤️ Made with Love | Prince Kumar © 2025</p></footer>
+  </div>
 
-            const diff = Math.abs(bday1.getTime() - bday2.getTime());
-            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-            const percentage = 100 - (days % 100);
-            result.textContent = `Your birthday match score is: ${percentage}% 🎉`;
-        }
-    </script>
+  <script>
+    function toggleMenu() {
+      document.getElementById("mainNav").classList.toggle("show");
+    }
+
+    function calculateBirthdayMatch() {
+      const bday1 = new Date(document.getElementById("bday1").value);
+      const bday2 = new Date(document.getElementById("bday2").value);
+      const display = document.getElementById("percentageDisplay");
+      const message = document.getElementById("messageDisplay");
+
+      if (!bday1.getTime() || !bday2.getTime()) {
+        display.textContent = "😕";
+        message.textContent = "Please enter both birthdays.";
+        return;
+      }
+
+      const diff = Math.abs(bday1 - bday2);
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const percent = 100 - (days % 100);
+      display.textContent = `${percent}%`;
+      message.textContent = `Your birthday compatibility score is ${percent}% 🎉`;
+    }
+  </script>
 </body>
 </html>
