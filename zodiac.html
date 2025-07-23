@@ -1,79 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zodiac Match - Love Calculator</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zodiac Match</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1><i class='fas fa-star'></i> Zodiac Love Match</h1>
-        </header>
-        <section class="content-section">
-            <p>Select your zodiac signs to see your compatibility!</p>
-            <form id="zodiacForm">
-                <label for="sign1">Your Zodiac Sign:</label>
-                <select id="sign1">
-                    <option value="">--Select--</option>
-                    <option value="aries">Aries</option>
-                    <option value="taurus">Taurus</option>
-                    <option value="gemini">Gemini</option>
-                    <option value="cancer">Cancer</option>
-                    <option value="leo">Leo</option>
-                    <option value="virgo">Virgo</option>
-                    <option value="libra">Libra</option>
-                    <option value="scorpio">Scorpio</option>
-                    <option value="sagittarius">Sagittarius</option>
-                    <option value="capricorn">Capricorn</option>
-                    <option value="aquarius">Aquarius</option>
-                    <option value="pisces">Pisces</option>
-                </select>
+  <div class="container">
+    <header>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+      <h1>⭐ Zodiac Match</h1>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html">Love Name Match</a>
+        <a href="birthday.html">Birthday Match</a>
+        <a href="zodiac.html">Zodiac Match</a>
+      </nav>
+    </header>
 
-                <label for="sign2">Partner's Zodiac Sign:</label>
-                <select id="sign2">
-                    <option value="">--Select--</option>
-                    <option value="aries">Aries</option>
-                    <option value="taurus">Taurus</option>
-                    <option value="gemini">Gemini</option>
-                    <option value="cancer">Cancer</option>
-                    <option value="leo">Leo</option>
-                    <option value="virgo">Virgo</option>
-                    <option value="libra">Libra</option>
-                    <option value="scorpio">Scorpio</option>
-                    <option value="sagittarius">Sagittarius</option>
-                    <option value="capricorn">Capricorn</option>
-                    <option value="aquarius">Aquarius</option>
-                    <option value="pisces">Pisces</option>
-                </select>
-
-                <button type="button" onclick="checkZodiacMatch()">Check Match</button>
-            </form>
-            <p id="zodiacResult" class="message" style="margin-top: 20px;"></p>
-        </section>
-        <footer>
-            <p>Made with ❤️ by Prince Kumar</p>
-        </footer>
+    <div class="input-section">
+      <div class="input-box">
+        <label for="sign1">Your Zodiac Sign:</label>
+        <select id="sign1">
+          <option value="">--Select--</option>
+          <option value="aries">Aries</option>
+          <option value="taurus">Taurus</option>
+          <option value="gemini">Gemini</option>
+          <option value="cancer">Cancer</option>
+          <option value="leo">Leo</option>
+          <option value="virgo">Virgo</option>
+          <option value="libra">Libra</option>
+          <option value="scorpio">Scorpio</option>
+          <option value="sagittarius">Sagittarius</option>
+          <option value="capricorn">Capricorn</option>
+          <option value="aquarius">Aquarius</option>
+          <option value="pisces">Pisces</option>
+        </select>
+      </div>
+      <div class="input-box">
+        <label for="sign2">Partner's Zodiac Sign:</label>
+        <select id="sign2">
+          <option value="">--Select--</option>
+          <!-- same options -->
+          <option value="aries">Aries</option>
+          <option value="taurus">Taurus</option>
+          <option value="gemini">Gemini</option>
+          <option value="cancer">Cancer</option>
+          <option value="leo">Leo</option>
+          <option value="virgo">Virgo</option>
+          <option value="libra">Libra</option>
+          <option value="scorpio">Scorpio</option>
+          <option value="sagittarius">Sagittarius</option>
+          <option value="capricorn">Capricorn</option>
+          <option value="aquarius">Aquarius</option>
+          <option value="pisces">Pisces</option>
+        </select>
+      </div>
+      <button class="calculate-btn" onclick="checkZodiacMatch()">Check Match</button>
     </div>
 
-    <script>
-        function checkZodiacMatch() {
-            const sign1 = document.getElementById('sign1').value;
-            const sign2 = document.getElementById('sign2').value;
-            const result = document.getElementById('zodiacResult');
+    <div class="result-section">
+      <h2 class="result-title">Zodiac Compatibility</h2>
+      <div class="percentage" id="percentageDisplay">0%</div>
+      <div class="message" id="messageDisplay"></div>
+    </div>
 
-            if (!sign1 || !sign2) {
-                result.textContent = 'Please select both zodiac signs.';
-                return;
-            }
+    <footer><p>❤️ Made with Love | Prince Kumar © 2025</p></footer>
+  </div>
 
-            if (sign1 === sign2) {
-                result.textContent = 'Wow! Same signs often share deep understanding. Strong match!';
-            } else {
-                result.textContent = `The match between ${sign1} and ${sign2} can be exciting! Communication and trust matter.`;
-            }
-        }
-    </script>
+  <script>
+    function toggleMenu() {
+      document.getElementById("mainNav").classList.toggle("show");
+    }
+
+    function checkZodiacMatch() {
+      const sign1 = document.getElementById("sign1").value;
+      const sign2 = document.getElementById("sign2").value;
+      const percent = Math.floor(Math.random() * 21) + 80;
+      const display = document.getElementById("percentageDisplay");
+      const message = document.getElementById("messageDisplay");
+
+      if (!sign1 || !sign2) {
+        display.textContent = "😕";
+        message.textContent = "Please select both zodiac signs.";
+        return;
+      }
+
+      display.textContent = `${percent}%`;
+      message.textContent = sign1 === sign2
+        ? `Wow! Same signs often share deep understanding. Strong match!`
+        : `The match between ${sign1} and ${sign2} is ${percent}%. Communication is key!`;
+    }
+  </script>
 </body>
 </html>
