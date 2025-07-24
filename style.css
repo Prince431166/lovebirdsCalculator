@@ -1,0 +1,347 @@
+/* 🔄 Reset & Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 🌈 Background & Body */
+body {
+  background: linear-gradient(135deg, #130101, #0f0e0e, #1f0710, #30130d, #a2d2ff);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  min-height: 100vh;
+  padding: 20px;
+  color: #333;
+  transition: background 0.5s ease, color 0.5s ease;
+}
+
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* 📦 Container */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #1f1f1f;
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid #3d3d3d;
+  color: #c9c2c2;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    
+}
+
+/* 💖 Header Section */
+.love-header {
+  text-align: center;
+  margin-bottom: 30px;
+  position: relative;
+  padding-top: 20px;
+}
+
+.love-header h1 {
+  font-size: 3rem;
+  color: #f1046b;
+  text-shadow: 0 0 10px rgba(236, 233, 234, 0.863);
+  animation: pulse 2s infinite;
+}
+
+.love-header .tagline {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+  color: #eee6e6;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* 🍔 Hamburger */
+.hamburger {
+  font-size: 24px;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 1000;
+  color: #e6e1e1;
+  display: none;
+}
+
+/* 🌙 Dark Toggle */
+.dark-toggle-center {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+
+}
+
+#darkModeIcon {
+  font-size: 24px;
+  color: #e6e1e1;
+  cursor: pointer;
+}
+
+/* 🔗 Navigation */
+.main-nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.main-nav a {
+  color: rgb(218, 207, 207);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 5px 10px;
+}
+
+.main-nav a:hover {
+  color: #ddd3d6;
+}
+
+/* 📱 Responsive Nav */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .main-nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    z-index: 999;
+    background: none;
+  }
+
+  .main-nav.show {
+    display: flex;
+  }
+
+  .main-nav a {
+    color: #d6173d;
+    text-align: right;
+    padding: 8px 0;
+  }
+}
+
+/* 📥 Input Sections */
+.input-section,
+.result-section,
+.love-quotes,
+.content-section {
+  background: #0e0d0dee;
+  border-radius: 15px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.input-group {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.input-box {
+  flex: 1;
+  min-width: 250px;
+}
+
+.input-box label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.input-box input,
+input[type="date"],
+select {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: 1px solid #777575;
+  background: #141414;
+  font-size: 1rem;
+  color: #666464;
+  transition: all 0.3s ease;
+}
+
+.input-box input:focus,
+input[type="date"]:focus,
+select:focus {
+  outline: none;
+  border-color: #e01648;
+  box-shadow: 0 0 8px rgba(245, 40, 91, 0.2);
+}
+
+/* 🔘 Button */
+.calculate-btn,
+button {
+  width: 100%;
+  padding: 15px;
+  background: #f81c4f;
+  border: none;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover,
+.calculate-btn:hover {
+  background: #eb004e;
+}
+
+/* 📊 Results */
+.result-title {
+  font-size: 1.8rem;
+  color: #f72e60;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.percentage {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #ffcc00;
+  text-align: center;
+  margin: 15px 0;
+}
+
+.message {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #bebcbc;
+}
+
+/* 💬 Quotes */
+.quote-title {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #f53061;
+}
+
+.quote {
+  font-style: italic;
+  text-align: center;
+  color: #c7c3c3;
+  font-size: 1rem;
+}
+
+.quote-author {
+  text-align: right;
+  font-weight: bold;
+  color: #fa1e1e;
+  margin-top: 10px;
+}
+
+/* 🧠 About Section */
+.content-section h2,
+.content-section h3 {
+  color: #791641;
+  margin-bottom: 10px;
+}
+
+.content-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* 🌑 Dark Mode Support */
+body.dark-mode {
+  background: #0e0d0d;
+  color: #eee;
+}
+
+body.dark-mode .container {
+  background: #3b3a3a;
+  border-color: #f3efef;
+}
+
+body.dark-mode .input-section,
+body.dark-mode .result-section,
+body.dark-mode .love-quotes,
+body.dark-mode .content-section {
+  background: #2e2d2d;
+  color: #eee;
+}
+
+body.dark-mode .input-box input,
+body.dark-mode input[type="date"],
+body.dark-mode select {
+  background: a09b9b;
+  color: #fff;
+  border: 1px solid #b3b0b0;
+}
+
+body.dark-mode .message,
+body.dark-mode .quote,
+body.dark-mode .quote-author,
+body.dark-mode .content-section p,
+body.dark-mode .love-header .tagline {
+  color: #eee;
+}
+
+body.dark-mode .main-nav a {
+  color: #dfd9db;
+}
+body.dark-mode .main-nav a:hover {
+  color: #f1046b;
+}
+
+/* ❤️ Floating Hearts */
+.heart {
+  position: absolute;
+  animation: floatUp 20s linear infinite;
+  color: #ff69b4;
+  pointer-events: none;
+}
+
+@keyframes floatUp {
+  0% { transform: translateY(100vh); }
+  100% { transform: translateY(-10vh) rotate(360deg); }
+}
+
+/* 📱 Responsive Fixes */
+@media (max-width: 768px) {
+  .love-header h1 { font-size: 2rem; }
+  .love-header .tagline { font-size: 1rem; }
+  .input-group { flex-direction: column; }
+  .input-box { min-width: 100%; }
+  .percentage { font-size: 3.5rem; }
+  .calculate-btn { font-size: 1rem; padding: 12px; }
+  .quote { font-size: 0.95rem; }
+  .quote-author { font-size: 0.9rem; }
+}
+
+h1 {
+    color: #ff006e;
+   line-height: 1.6; 
+}
+
+p {
+    letter-spacing: 3px;
+    line-height: 2;
+}
