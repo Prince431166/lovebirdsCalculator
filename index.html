@@ -24,7 +24,6 @@
             --rose-gold: #d4a5a5;
             --pink: #ff9ecb;
             --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            --danger: #ff6b6b; /* For clear button */
         }
 
         * {
@@ -99,7 +98,7 @@
             color: var(--rose-gold);
         }
 
-        .dark-mode.tagline {
+        .dark-mode .tagline {
             color: var(--accent-dark);
         }
 
@@ -126,7 +125,7 @@
             transform: scale(1.1) rotate(180deg);
         }
 
-        .dark-mode.theme-toggle {
+        .dark-mode .theme-toggle {
             background: rgba(45, 31, 21, 0.9);
             border-color: var(--accent-dark);
         }
@@ -137,7 +136,7 @@
             transition: var(--transition);
         }
 
-        .dark-mode.toggle-thumb {
+        .dark-mode .toggle-thumb {
             color: var(--accent-dark);
         }
 
@@ -157,7 +156,7 @@
             gap: 5px;
         }
 
-        .dark-mode.nav-tabs {
+        .dark-mode .nav-tabs {
             background: rgba(45, 31, 21, 0.8);
         }
 
@@ -176,7 +175,7 @@
             box-shadow: 0 5px 15px rgba(230, 184, 92, 0.4);
         }
 
-        .dark-mode.nav-tab.active {
+        .dark-mode .nav-tab.active {
             background: linear-gradient(135deg, var(--accent-dark) 0%, #b06b6f 100%);
         }
 
@@ -216,7 +215,7 @@
             opacity: 0.5;
         }
 
-        .dark-mode.counter-card {
+        .dark-mode .counter-card {
             background: rgba(45, 31, 21, 0.8);
             box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
         }
@@ -258,7 +257,7 @@
             transition: var(--transition);
         }
         
-        .dark-mode.name-input {
+        .dark-mode .name-input {
             border-color: var(--accent-dark);
             color: var(--text-dark);
             background: var(--primary-dark);
@@ -294,7 +293,7 @@
             transition: background 0.3s linear;
         }
         
-        .dark-mode.circular-progress {
+        .dark-mode .circular-progress {
             background: conic-gradient(var(--accent-dark) 0deg, var(--secondary-dark) 0deg);
         }
 
@@ -314,7 +313,7 @@
             box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.1);
         }
         
-        .dark-mode.inner-circle {
+        .dark-mode .inner-circle {
             background-color: var(--secondary-dark);
         }
         
@@ -325,7 +324,7 @@
             margin-bottom: 5px;
         }
         
-        .dark-mode.timer-display {
+        .dark-mode .timer-display {
             color: var(--accent-dark);
         }
 
@@ -343,7 +342,7 @@
             margin-top: 10px;
         }
         
-        .dark-mode.counter-label {
+        .dark-mode .counter-label {
             color: var(--text-dark);
         }
 
@@ -386,7 +385,7 @@
             border: 1px solid #e6bc9c;
         }
 
-        .dark-mode.btn-secondary {
+        .dark-mode .btn-secondary {
             background: rgba(45, 31, 21, 0.9);
             color: var(--accent-dark);
             border: 1px solid var(--accent-dark);
@@ -397,7 +396,7 @@
             transform: translateY(-5px);
         }
 
-        .dark-mode.btn-secondary:hover {
+        .dark-mode .btn-secondary:hover {
             background: rgba(45, 31, 21, 1);
         }
         
@@ -407,7 +406,7 @@
             color: #8a5a5a;
         }
 
-        .dark-mode.mala-info {
+        .dark-mode .mala-info {
             color: var(--accent-dark);
         }
 
@@ -438,7 +437,7 @@
             transform: rotate(45deg);
         }
 
-        .dark-mode.info-card {
+        .dark-mode .info-card {
             background: rgba(45, 31, 21, 0.8);
             box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
         }
@@ -488,11 +487,11 @@
             background: rgba(255, 255, 255, 0.8);
         }
 
-        .dark-mode.feature {
+        .dark-mode .feature {
             background: rgba(26, 18, 11, 0.5);
         }
 
-        .dark-mode.feature:hover {
+        .dark-mode .feature:hover {
             background: rgba(26, 18, 11, 0.8);
         }
 
@@ -516,18 +515,8 @@
             max-height: 200px;
             overflow-y: auto;
         }
-        
-        .history-controls {
-            display: inline-flex;
-            gap: 15px;
-            transition: all 0.3s ease;
-        }
-        
-        .history-controls i:hover {
-            transform: scale(1.2);
-        }
 
-        .dark-mode.history {
+        .dark-mode .history {
             background: rgba(26, 18, 11, 0.5);
         }
 
@@ -544,11 +533,11 @@
             padding-left: 10px;
         }
 
-        .dark-mode.history-item {
+        .dark-mode .history-item {
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         }
 
-        .dark-mode.history-item:hover {
+        .dark-mode .history-item:hover {
             background: rgba(26, 18, 11, 0.8);
         }
 
@@ -565,7 +554,7 @@
             transition: var(--transition);
         }
 
-        .dark-mode.contact-section {
+        .dark-mode .contact-section {
             background: rgba(45, 31, 21, 0.8);
             box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
         }
@@ -591,7 +580,7 @@
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
         }
 
-        .dark-mode.contact-card {
+        .dark-mode .contact-card {
             background: rgba(26, 18, 11, 0.9);
         }
 
@@ -607,7 +596,7 @@
             color: var(--text-light);
         }
 
-        .dark-mode.contact-title {
+        .dark-mode .contact-title {
             color: var(--text-dark);
         }
 
@@ -615,7 +604,7 @@
             color: #8a5a5a;
         }
 
-        .dark-mode.contact-info {
+        .dark-mode .contact-info {
             color: var(--accent-dark);
         }
 
@@ -668,7 +657,11 @@
             color: var(--gold);
         }
 
-        .dark-mode.footer-link:hover {
+        .dark-mode .footer-link {
+            color: var(--accent-dark);
+        }
+
+        .dark-mode .footer-link:hover {
             color: var(--gold);
         }
 
@@ -826,7 +819,7 @@
             position: relative;
         }
 
-        .dark-mode.premanand-title {
+        .dark-mode .premanand-title {
             color: var(--text-dark);
         }
 
@@ -863,7 +856,7 @@
             border-radius: 20px;
         }
         
-        .dark-mode.carousel-slide {
+        .dark-mode .carousel-slide {
             background: rgba(45, 31, 21, 0.7);
         }
 
@@ -874,7 +867,7 @@
             margin-bottom: 15px;
         }
         
-        .dark-mode.sanskrit-text {
+        .dark-mode .sanskrit-text {
             color: var(--text-dark);
         }
 
@@ -884,7 +877,7 @@
             margin-bottom: 15px;
         }
         
-        .dark-mode.hindi-text {
+        .dark-mode .hindi-text {
             color: var(--accent-dark);
         }
 
@@ -910,7 +903,7 @@
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
         
-        .dark-mode.nav-btn {
+        .dark-mode .nav-btn {
             background: rgba(45, 31, 21, 0.7);
             color: var(--text-dark);
         }
@@ -920,7 +913,7 @@
             transform: scale(1.1);
         }
         
-        .dark-mode.nav-btn:hover {
+        .dark-mode .nav-btn:hover {
             background: rgba(45, 31, 21, 1);
         }
         
@@ -944,7 +937,7 @@
             text-align: center;
         }
 
-        .dark-mode.key-card {
+        .dark-mode .key-card {
             background: rgba(45, 31, 21, 0.9);
             box-shadow: 0 8px 20px rgba(0,0,0,0.4);
         }
@@ -967,7 +960,7 @@
             margin-bottom: 10px;
         }
         
-        .dark-mode.key-card-title {
+        .dark-mode .key-card-title {
             color: var(--text-dark);
         }
         
@@ -977,163 +970,80 @@
             color: #8a5a5a;
         }
         
-        .dark-mode.key-card-text {
+        .dark-mode .key-card-text {
             color: var(--accent-dark);
         }
-        
-        /* --- Styles for Settings Section --- */
-        .settings-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-        }
 
-        .setting-item {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background: rgba(255, 255, 255, 0.9);
-            border-radius: 20px;
-            padding: 25px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-        }
-
-        .dark-mode.setting-item {
-            background: rgba(45, 31, 21, 0.9);
-        }
-
-        .setting-item label {
-            font-weight: 500;
-        }
-
-        .toggle-switch {
-            position: relative;
-            display: inline-block;
-            width: 60px;
-            height: 34px;
-        }
-
-        .toggle-switch input {
-            opacity: 0;
-            width: 0;
-            height: 0;
-        }
-
-        .slider {
-            position: absolute;
-            cursor: pointer;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: #ccc;
-            transition:.4s;
-            border-radius: 34px;
-        }
-
-        .slider:before {
-            position: absolute;
-            content: "";
-            height: 26px;
-            width: 26px;
-            left: 4px;
-            bottom: 4px;
-            background-color: white;
-            transition:.4s;
-            border-radius: 50%;
-        }
-
-        input:checked + .slider {
-            background-color: #f1b53d;
-        }
-
-        input:focus + .slider {
-            box-shadow: 0 0 1px #f1b53d;
-        }
-
-        input:checked + .slider:before {
-            transform: translateX(26px);
-        }
-
-        /* --- NEW: Styles for Fullscreen History Modal --- */
-        .history-fullscreen-overlay {
+        /* Modal Styles */
+        .modal {
+            display: none;
             position: fixed;
-            top: 0;
+            z-index: 2000;
             left: 0;
+            top: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.7);
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.6);
             backdrop-filter: blur(5px);
-            display: none; /* Hidden by default */
-            justify-content: center;
-            align-items: center;
-            z-index: 5000;
-            padding: 20px;
-            animation: fadeIn 0.3s ease;
+            animation: fadeInModal 0.3s ease-out;
+        }
+        
+        .modal-content {
+            background: var(--secondary-light);
+            margin: 5% auto;
+            padding: 30px;
+            border-radius: 25px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            max-width: 800px;
+            position: relative;
+            animation: slideIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
 
-        .history-fullscreen-overlay.active {
-            display: flex;
-        }
-        
-        .history-fullscreen-content {
-            background: var(--secondary-light);
-            color: var(--text-light);
-            padding: 40px;
-            border-radius: 20px;
-            width: 90%;
-            max-width: 800px;
-            height: 80%;
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
-        }
-        
-        .dark-mode.history-fullscreen-content {
+        .dark-mode .modal-content {
             background: var(--secondary-dark);
+        }
+        
+        @keyframes fadeInModal {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        
+        .close-btn {
+            color: var(--text-light);
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 2.5rem;
+            font-weight: bold;
+            transition: transform 0.2s ease;
+            cursor: pointer;
+        }
+
+        .dark-mode .close-btn {
             color: var(--text-dark);
         }
-        
-        .history-fullscreen-list {
-            flex-grow: 1;
+
+        .close-btn:hover {
+            transform: rotate(90deg);
+            color: var(--pink);
+        }
+
+        .history-modal-body {
+            max-height: 60vh;
             overflow-y: auto;
+            padding-right: 15px;
             margin-top: 20px;
         }
-        
-        /* Reuse existing history item styles inside the modal */
-        .history-fullscreen-list .history-item {
-            padding: 15px 5px;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-        }
 
-        .dark-mode .history-fullscreen-list .history-item {
-            border-bottom-color: rgba(255, 255, 255, 0.08);
-        }
-        
-        .history-fullscreen-list .history-item:last-child {
-            border-bottom: none;
-        }
-
-        .close-fullscreen-btn {
-            position: absolute;
-            top: 15px;
-            right: 20px;
-            background: none;
-            border: none;
-            font-size: 2.5rem;
-            color: var(--text-light);
-            cursor: pointer;
-            line-height: 1;
-            transition: transform 0.2s ease;
-        }
-        
-        .close-fullscreen-btn:hover {
-            transform: scale(1.2);
-        }
-        
-        .dark-mode.close-fullscreen-btn {
-            color: var(--text-dark);
+        .modal-footer {
+            text-align: right;
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -1148,7 +1058,6 @@
                     <div class="nav-tab active" data-tab="counter">Mala Jap</div>
                     <div class="nav-tab" data-tab="premanand">Maharaj Ji</div>
                     <div class="nav-tab" data-tab="chabiya">Keys</div>
-                    <div class="nav-tab" data-tab="settings">Settings</div>
                     <div class="nav-tab" data-tab="about">About Us</div>
                     <div class="nav-tab" data-tab="contact">Contact Us</div>
                     <div class="nav-tab" data-tab="privacy">Privacy</div>
@@ -1210,16 +1119,10 @@
                         </div>
                     </div>
                     
-                    <h3 class="info-title" style="font-size: 1.6rem; margin-top: 30px; display: flex; justify-content: space-between; align-items: center; width: 100%;">
-                        <span>Jap History</span>
-                        <span class="history-controls">
-                            <i class="fas fa-file-pdf" id="downloadPdfBtn" style="cursor: pointer; font-size: 1.2rem; color: var(--gold);" title="Download as PDF"></i>
-                            <i class="fas fa-trash-alt" id="clearHistoryBtn" style="cursor: pointer; font-size: 1.2rem; color: var(--danger);" title="Clear History"></i>
-                            <i class="fas fa-expand" id="fullscreenHistoryBtn" style="cursor: pointer; font-size: 1.2rem; color: var(--gold);" title="View Fullscreen"></i>
-                        </span>
-                    </h3>
+                    <h3 class="info-title" style="font-size: 1.6rem; margin-top: 30px;">Jap History</h3>
                     <div class="history" id="history">
                     </div>
+                    <button class="btn btn-secondary" id="showHistoryBtn" style="margin-top: 20px;">इतिहास देखें (पूरी स्क्रीन)</button>
                         
                     <h3 class="info-title" style="font-size: 1.6rem; margin-top: 30px;">Lifetime Totals</h3>
                     <div class="features">
@@ -1239,7 +1142,7 @@
         <div class="content-section" id="premanand-section">
             <h2 class="premanand-title">श्री प्रेमानंद महाराज जी - दिव्य उपदेश</h2>
             
-            <div class="info-card" style="margin: 0 auto;">
+            <div class="info-card">
                 <h2 class="info-title">दिव्य उपदेश</h2>
                 <div class="teachings-carousel">
                     <div class="carousel-track" id="carouselTrack">
@@ -1288,35 +1191,9 @@
             </div>
         </div>
 
-        <div class="content-section" id="settings-section">
-            <div class="info-card" style="margin: 0 auto;">
-                <h2 class="info-title">Settings</h2>
-                <p class="info-text">अपने जप अनुभव को अपनी पसंद के अनुसार अनुकूलित करें।</p>
-                <div class="settings-grid">
-                    <div class="setting-item">
-                        <label for="volumeControlToggle">Volume Button Control</label>
-                        <label class="toggle-switch">
-                            <input type="checkbox" id="volumeControlToggle">
-                            <span class="slider"></span>
-                        </label>
-                    </div>
-                    <div class="setting-item">
-                        <label for="hapticFeedbackToggle">Haptic Feedback (Vibrate)</label>
-                        <label class="toggle-switch">
-                            <input type="checkbox" id="hapticFeedbackToggle">
-                            <span class="slider"></span>
-                        </label>
-                    </div>
-                    <div class="setting-item">
-                        <label for="bgImageInput">Background Image</label>
-                        <input type="file" id="bgImageInput" accept="image/*">
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <div class="content-section" id="about-section">
-            <div class="info-card" style="margin: 0 auto;">
+            <div class="info-card">
                 <h2 class="info-title">About Us</h2>
                 <p class="info-text">राधा नाम जप एक भक्ति प्लेटफॉर्म है जिसे प्रेम और समर्पण के साथ बनाया गया है ताकि राधा कृष्ण भक्ति के अभ्यासियों को डिजिटल साधनों के माध्यम से उनके आध्यात्मिक अभ्यास को बढ़ाने में मदद मिल सके।</p>
                 
@@ -1385,7 +1262,7 @@
         </div>
 
         <div class="content-section" id="privacy-section">
-            <div class="info-card" style="margin: 0 auto;">
+            <div class="info-card">
                 <h2 class="info-title">Privacy</h2>
                 <p class="info-text">राधा नाम जप में, हम आपकी गोपनीयता को महत्व देते हैं और आपकी व्यक्तिगत जानकारी की सुरक्षा के लिए प्रतिबद्ध हैं।</p>
                 
@@ -1420,16 +1297,18 @@
 
     <div class="decorative-element deco-1">ॐ</div>
     <div class="decorative-element deco-2">राधे</div>
-    
-    <div class="history-fullscreen-overlay" id="historyFullscreenOverlay">
-        <div class="history-fullscreen-content">
-            <h2 class="info-title">Jap History</h2>
-            <div class="history-fullscreen-list" id="historyFullscreenList"></div>
-            <button class="close-fullscreen-btn" id="closeFullscreenHistoryBtn">&times;</button>
+
+    <div id="historyModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 class="info-title">जप इतिहास</h2>
+            <div id="modalHistoryContainer" class="history-modal-body">
+                </div>
+            <div class="modal-footer">
+                <button id="clearHistoryBtn" class="btn btn-secondary">इतिहास साफ़ करें</button>
+            </div>
         </div>
     </div>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -1454,20 +1333,12 @@
             const totalCountDisplay = document.getElementById('totalCountDisplay');
             const totalMalaDisplay = document.getElementById('totalMalaDisplay');
 
-            // Fullscreen History Elements
-            const fullscreenHistoryBtn = document.getElementById('fullscreenHistoryBtn');
-            const historyFullscreenOverlay = document.getElementById('historyFullscreenOverlay');
-            const historyFullscreenList = document.getElementById('historyFullscreenList');
-            const closeFullscreenHistoryBtn = document.getElementById('closeFullscreenHistoryBtn');
-
-            // History Control Elements
+            // Modal Elements
+            const historyModal = document.getElementById('historyModal');
+            const modalHistoryContainer = document.getElementById('modalHistoryContainer');
+            const closeBtn = document.querySelector('.close-btn');
+            const showHistoryBtn = document.getElementById('showHistoryBtn');
             const clearHistoryBtn = document.getElementById('clearHistoryBtn');
-            const downloadPdfBtn = document.getElementById('downloadPdfBtn');
-
-            // Settings Elements
-            const volumeControlToggle = document.getElementById('volumeControlToggle');
-            const hapticFeedbackToggle = document.getElementById('hapticFeedbackToggle');
-            const bgImageInput = document.getElementById('bgImageInput');
 
             // Initialize counter values
             let count = 0;
@@ -1492,6 +1363,7 @@
                     icon.classList.add('fa-moon');
                 }
                 localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+                updateCircularProgress(); // Update progress bar color
             });
             
             // Navigation tab functionality
@@ -1532,11 +1404,6 @@
                     startTimer();
                 }
                 count++;
-                if (hapticFeedbackToggle.checked) {
-                    if (navigator.vibrate) { // Check if vibration is supported
-                        navigator.vibrate(100); 
-                    }
-                }
                 if (count > 0 && count % 108 === 0) {
                     malaCount++;
                     showMalaCompleteNotification();
@@ -1560,22 +1427,6 @@
             // Save button functionality
             saveBtn.addEventListener('click', function() {
                 saveSession();
-            });
-
-            // Volume button control logic
-            let volumeControlEnabled = false;
-            volumeControlToggle.addEventListener('change', function() {
-                volumeControlEnabled = this.checked;
-                localStorage.setItem('volumeControlEnabled', this.checked);
-            });
-            
-            document.addEventListener('keydown', function(event) {
-                if (volumeControlEnabled) {
-                    if (event.key === 'ArrowUp' || event.key === 'ArrowDown' || event.key === ' ' || event.key === 'v' || event.key === 'V') {
-                        event.preventDefault();
-                        countBtn.click();
-                    }
-                }
             });
 
             function startTimer() {
@@ -1606,26 +1457,33 @@
                 counterDisplay.textContent = count;
                 malaCountDisplay.textContent = malaCount;
                 
+                updateCircularProgress();
+
+                saveData(); // Save current session progress automatically
+            }
+
+            function updateCircularProgress() {
                 const currentCountInMala = count % 108;
                 const percentage = (currentCountInMala / 108) * 100;
-                const gradientDegree = percentage * 3.6;
+                const gradientDegree = percentage * 3.6; // 360 / 100
                 
-                const isDarkMode = document.body.classList.contains('dark-mode');
                 const lightModeGradient = `conic-gradient(var(--pink) ${gradientDegree}deg, var(--accent-light) ${gradientDegree}deg)`;
                 const darkModeGradient = `conic-gradient(var(--accent-dark) ${gradientDegree}deg, var(--secondary-dark) ${gradientDegree}deg)`;
-
-                const progressStyle = isDarkMode ? darkModeGradient : lightModeGradient;
-                circularProgress.style.background = progressStyle;
-
-                saveData();
+                
+                if (document.body.classList.contains('dark-mode')) {
+                    circularProgress.style.background = darkModeGradient;
+                } else {
+                    circularProgress.style.background = lightModeGradient;
+                }
             }
             
             function showRadhaNaamAnimation() {
                 radhaText.classList.remove('animate');
-                void radhaText.offsetWidth; // Trigger reflow to restart animation
+                void radhaText.offsetWidth; // Trigger reflow
                 radhaText.classList.add('animate');
             }
             
+            // Save current session to history and add to totals
             function saveSession() {
                 if (count === 0) {
                     alert('सहेजने के लिए कुछ नहीं। कृपया पहले जप शुरू करें।');
@@ -1639,23 +1497,24 @@
                 const timeString = now.toLocaleTimeString('hi-IN', { hour: '2-digit', minute: '2-digit' });
                 const japName = japNameInput.value.trim() || "राधा";
 
-                const newHistoryEntry = `<div class="history-item"><span>${japName} - ${dateString} ${timeString}</span><span>${count} Jap / ${malaCount} Mala</span></div>`;
-
-                const currentHistory = localStorage.getItem('radhaNaamJapHistory') || '';
-                const updatedHistory = newHistoryEntry + currentHistory;
+                const historyItem = document.createElement('div');
+                historyItem.classList.add('history-item');
+                historyItem.innerHTML = `<span>${japName} - ${dateString} ${timeString}</span><span>${count} Jap/ ${malaCount} Mala</span>`;
+                historyContainer.prepend(historyItem);
                 
-                historyContainer.innerHTML = updatedHistory;
-                
+                // Update and save lifetime totals
                 totalCount += count;
                 totalMalaCount += malaCount;
                 localStorage.setItem('radhaNaamJapTotals', JSON.stringify({ totalCount, totalMalaCount }));
-                localStorage.setItem('radhaNaamJapHistory', updatedHistory);
+                localStorage.setItem('radhaNaamJapHistory', historyContainer.innerHTML);
 
+                // Update total displays
                 totalCountDisplay.textContent = totalCount;
                 totalMalaDisplay.textContent = totalMalaCount;
 
                 showSaveConfirmation();
 
+                // Reset current session for the next one
                 count = 0;
                 malaCount = 0;
                 seconds = 0;
@@ -1663,26 +1522,27 @@
                 updateCounterAndSave();
             }
             
+            // Save current session data to localStorage
             function saveData() {
-                localStorage.setItem('radhaNaamJapCurrentSession', JSON.stringify({ count, malaCount, seconds }));
+                localStorage.setItem('radhaNaamJapCurrentSession', JSON.stringify({ count, malaCount }));
             }
             
+            // Load all data from localStorage on startup
             function loadSavedData() {
+                // Load theme
                 if (localStorage.getItem('darkMode') === 'true') {
                     document.body.classList.add('dark-mode');
                     themeToggle.querySelector('i').classList.replace('fa-moon', 'fa-sun');
                 }
                 
+                // Load current session progress
                 const currentSessionData = JSON.parse(localStorage.getItem('radhaNaamJapCurrentSession'));
                 if (currentSessionData) {
                     count = currentSessionData.count || 0;
                     malaCount = currentSessionData.malaCount || 0;
-                    seconds = currentSessionData.seconds || 0; 
-                    if (count > 0) {
-                        startTimer();
-                    }
                 }
                 
+                // Load custom name
                 const savedJapName = localStorage.getItem('japName');
                 if (savedJapName) {
                     japNameInput.value = savedJapName;
@@ -1690,6 +1550,7 @@
                     radhaText.textContent = savedJapName;
                 }
 
+                // Load lifetime totals
                 const totalsData = JSON.parse(localStorage.getItem('radhaNaamJapTotals'));
                 if (totalsData) {
                     totalCount = totalsData.totalCount || 0;
@@ -1698,28 +1559,13 @@
                 totalCountDisplay.textContent = totalCount;
                 totalMalaDisplay.textContent = totalMalaCount;
                 
+                // Load history
                 const savedHistory = localStorage.getItem('radhaNaamJapHistory');
                 if (savedHistory) {
                     historyContainer.innerHTML = savedHistory;
                 }
-
-                if (localStorage.getItem('volumeControlEnabled') === 'true') {
-                    volumeControlToggle.checked = true;
-                    volumeControlEnabled = true;
-                }
                 
-                if (localStorage.getItem('hapticFeedbackEnabled') === 'true') {
-                    hapticFeedbackToggle.checked = true;
-                }
-                
-                const savedBgImage = localStorage.getItem('bgImage');
-                if (savedBgImage) {
-                    document.body.style.backgroundImage = `url(${savedBgImage})`;
-                    document.body.style.backgroundSize = 'cover';
-                    document.body.style.backgroundPosition = 'center';
-                }
-                
-                updateCounterAndSave();
+                updateCounterAndSave(); // Initial UI update
             }
             
             function showMalaCompleteNotification() {
@@ -1760,98 +1606,30 @@
                 }, 2000);
             }
 
-            // Fullscreen History Logic
-            fullscreenHistoryBtn.addEventListener('click', () => {
-                historyFullscreenList.innerHTML = historyContainer.innerHTML;
-                historyFullscreenOverlay.classList.add('active');
+            // Modal functionality for Jap History
+            showHistoryBtn.addEventListener('click', function() {
+                modalHistoryContainer.innerHTML = historyContainer.innerHTML; // Clone content
+                historyModal.style.display = 'block';
             });
-
-            function closeHistoryModal() {
-                historyFullscreenOverlay.classList.remove('active');
-            }
             
-            closeFullscreenHistoryBtn.addEventListener('click', closeHistoryModal);
-
-            historyFullscreenOverlay.addEventListener('click', (e) => {
-                if (e.target === historyFullscreenOverlay) {
-                    closeHistoryModal();
+            closeBtn.addEventListener('click', function() {
+                historyModal.style.display = 'none';
+            });
+            
+            window.addEventListener('click', function(event) {
+                if (event.target == historyModal) {
+                    historyModal.style.display = 'none';
                 }
             });
 
-            // Clear History Functionality
+            // Clear history button functionality
             clearHistoryBtn.addEventListener('click', function() {
-                if (confirm('क्या आप वाकई अपना सारा जप इतिहास और कुल योग साफ़ करना चाहते हैं? यह क्रिया पूर्ववत नहीं की जा सकती।')) {
+                if (confirm('क्या आप वाकई अपना पूरा जप इतिहास हटाना चाहते हैं? यह कार्रवाई वापस नहीं ली जा सकती।')) {
                     localStorage.removeItem('radhaNaamJapHistory');
-                    localStorage.removeItem('radhaNaamJapTotals');
-                    totalCount = 0;
-                    totalMalaCount = 0;
                     historyContainer.innerHTML = '';
-                    historyFullscreenList.innerHTML = '';
-                    totalCountDisplay.textContent = '0';
-                    totalMalaDisplay.textContent = '0';
-                    alert('इतिहास सफलतापूर्वक साफ़ कर दिया गया है।');
+                    modalHistoryContainer.innerHTML = '';
+                    alert('जप इतिहास साफ़ कर दिया गया है।');
                 }
-            });
-
-            // Corrected PDF Generation Logic
-            downloadPdfBtn.addEventListener('click', function() {
-                const historyHtml = localStorage.getItem('radhaNaamJapHistory') || '';
-                const totalsData = JSON.parse(localStorage.getItem('radhaNaamJapTotals')) || { totalCount: 0, totalMalaCount: 0 };
-                const japName = japNameInput.value.trim() || "राधा";
-
-                if (!historyHtml && totalsData.totalCount === 0) {
-                    alert('डाउनलोड करने के लिए कोई इतिहास नहीं है।');
-                    return;
-                }
-
-                const tempDiv = document.createElement('div');
-                tempDiv.innerHTML = historyHtml;
-                const items = tempDiv.querySelectorAll('.history-item');
-
-                let tableRows = '';
-                items.forEach(item => {
-                    const spans = item.querySelectorAll('span');
-                    // Corrected logic to get the text content from the two spans
-                    const dateInfo = spans[0] ? spans[0].textContent : '';
-                    const countInfo = spans[1] ? spans[1].textContent : '';
-                    tableRows += `<tr><td style="padding: 8px; border: 1px solid #ddd;">${dateInfo}</td><td style="padding: 8px; border: 1px solid #ddd;">${countInfo}</td></tr>`;
-                });
-                
-                const contentForPdf = `
-                    <div style="font-family: 'Hind Siliguri', sans-serif; padding: 30px; color: #333;">
-                        <h1 style="color: #5a2f2f; border-bottom: 2px solid #e6b85c; padding-bottom: 10px;">राधा नाम जप - इतिहास</h1>
-                        <p style="font-size: 1.2em;"><strong>जप नाम:</strong> ${japName}</p>
-                        <br>
-                        <h2 style="color: #5a2f2f;">कुल योग</h2>
-                        <p><strong>कुल जप:</strong> ${totalsData.totalCount}</p>
-                        <p><strong>कुल माला:</strong> ${totalsData.totalMalaCount}</p>
-                        <br>
-                        <h2 style="color: #5a2f2f;">सत्र इतिहास</h2>
-                        <table style="width: 100%; border-collapse: collapse; margin-top: 15px;">
-                            <thead style="background-color: #f2f2f2;">
-                                <tr>
-                                    <th style="padding: 12px; border: 1px solid #ddd; text-align: left;">दिनांक और समय</th>
-                                    <th style="padding: 12px; border: 1px solid #ddd; text-align: left;">विवरण</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                ${tableRows || '<tr><td colspan="2" style="padding: 8px; border: 1px solid #ddd; text-align: center;">कोई सत्र नहीं मिला।</td></tr>'}
-                            </tbody>
-                        </table>
-                        <br><br>
-                        <p style="text-align: center; color: #888; font-size: 0.9em;">© ${new Date().getFullYear()} राधा नाम जप | भक्ति और प्रेम के साथ डिजाइन किया गया</p>
-                    </div>
-                `;
-                
-                const options = {
-                    margin: 0.5,
-                    filename: 'Radha_Jap_History.pdf',
-                    image: { type: 'jpeg', quality: 0.98 },
-                    html2canvas: { scale: 2, useCORS: true },
-                    jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' }
-                };
-
-                html2pdf().from(contentForPdf).set(options).save();
             });
 
             // Premanand Maharaj Ji Section Logic
@@ -1860,33 +1638,69 @@
             const nextBtn = document.getElementById('nextBtn');
 
             const teachings = [
-                { sanskrit: "अहिंसा परमो धर्मः।", hindi: "अहिंसा सबसे बड़ा धर्म है।" },
-                { sanskrit: "सत्यं वद, धर्मं चर।", hindi: "सत्य बोलो, धर्म का पालन करो।" },
-                { sanskrit: "धर्मो रक्षति रक्षितः।", hindi: "धर्म की रक्षा करने वाले की धर्म रक्षा करता है।" },
-                { sanskrit: "वसुधैव कुटुम्बकम्।", hindi: "पूरी पृथ्वी ही एक परिवार है।" },
-                { sanskrit: "आत्मज्ञानं सर्वोत्कृष्टं ज्ञानम्।", hindi: "आत्मज्ञान ही सर्वोत्तम ज्ञान है।" },
-                { sanskrit: "प्रेमैव जीवनस्य सारः।", hindi: "प्रेम ही जीवन का सार है।" },
-                { sanskrit: "मायया मोहितं जगत्।", hindi: "माया से मोहित है यह संसार।" },
-                { sanskrit: "भक्तिः परम शान्तिः।", hindi: "भक्ति ही परम शांति है।" },
-                { sanskrit: "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन।", hindi: "तुम्हारा अधिकार केवल कर्म करने पर है, उसके फलों पर कभी नहीं।" }
+                {
+                    sanskrit: "अहिंसा परमो धर्मः।",
+                    hindi: "अहिंसा सबसे बड़ा धर्म है।"
+                },
+                {
+                    sanskrit: "सत्यं वद, धर्मं चर।",
+                    hindi: "सत्य बोलो, धर्म का पालन करो।"
+                },
+                {
+                    sanskrit: "धर्मो रक्षति रक्षितः।",
+                    hindi: "धर्म की रक्षा करने वाले की धर्म रक्षा करता है।"
+                },
+                {
+                    sanskrit: "वसुधैव कुटुम्बकम्।",
+                    hindi: "पूरी पृथ्वी ही एक परिवार है।"
+                },
+                {
+                    sanskrit: "आत्मज्ञानं सर्वोत्कृष्टं ज्ञानम्।",
+                    hindi: "आत्मज्ञान ही सर्वोत्तम ज्ञान है।"
+                },
+                {
+                    sanskrit: "प्रेमैव जीवनस्य सारः।",
+                    hindi: "प्रेम ही जीवन का सार है।"
+                },
+                {
+                    sanskrit: "मायया मोहितं जगत्।",
+                    hindi: "माया से मोहित है यह संसार।"
+                },
+                {
+                    sanskrit: "भक्तिः परम शान्तिः।",
+                    hindi: "भक्ति ही परम शांति है।"
+                },
+                {
+                    sanskrit: "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन।",
+                    hindi: "तुम्हारा अधिकार केवल कर्म करने पर है, उसके फलों पर कभी नहीं।"
+                }
             ];
             
+            // Populate Teachings Carousel
             if (carouselTrack) {
                 teachings.forEach(teaching => {
                     const slide = document.createElement('div');
                     slide.classList.add('carousel-slide');
-                    slide.innerHTML = `<p class="sanskrit-text">${teaching.sanskrit}</p><p class="hindi-text">${teaching.hindi}</p>`;
+                    slide.innerHTML = `
+                        <p class="sanskrit-text">${teaching.sanskrit}</p>
+                        <p class="hindi-text">${teaching.hindi}</p>
+                    `;
                     carouselTrack.appendChild(slide);
                 });
+            }
 
-                let slideIndex = 0;
-                const slides = document.querySelectorAll('.carousel-slide');
-                const totalSlides = slides.length;
+            // Carousel Functionality
+            let slideIndex = 0;
+            const slides = document.querySelectorAll('.carousel-slide');
+            const totalSlides = slides.length;
 
-                function updateCarousel() {
+            function updateCarousel() {
+                if (carouselTrack) {
                     carouselTrack.style.transform = `translateX(-${slideIndex * 100}%)`;
                 }
+            }
 
+            if (prevBtn && nextBtn) {
                 prevBtn.addEventListener('click', () => {
                     slideIndex = (slideIndex - 1 + totalSlides) % totalSlides;
                     updateCarousel();
@@ -1896,29 +1710,12 @@
                     slideIndex = (slideIndex + 1) % totalSlides;
                     updateCarousel();
                 });
-                
-                setInterval(() => { nextBtn.click(); }, 8000);
             }
 
-            // Settings Logic
-            hapticFeedbackToggle.addEventListener('change', function() {
-                localStorage.setItem('hapticFeedbackEnabled', this.checked);
-            });
-
-            bgImageInput.addEventListener('change', function(event) {
-                const file = event.target.files[0];
-                if (file) {
-                    const reader = new FileReader();
-                    reader.onload = function(e) {
-                        const imageDataUrl = e.target.result;
-                        document.body.style.backgroundImage = `url(${imageDataUrl})`;
-                        document.body.style.backgroundSize = 'cover';
-                        document.body.style.backgroundPosition = 'center';
-                        localStorage.setItem('bgImage', imageDataUrl);
-                    };
-                    reader.readAsDataURL(file);
-                }
-            });
+            // Auto-advance the carousel
+            setInterval(() => {
+                if (nextBtn) nextBtn.click();
+            }, 8000); // Change slide every 8 seconds
         });
     </script>
 </body>
