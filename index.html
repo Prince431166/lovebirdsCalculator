@@ -149,6 +149,8 @@
 
         .nav-tabs {
             display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
             background: rgba(255, 255, 255, 0.8);
             border-radius: 50px;
             padding: 5px;
@@ -917,7 +919,7 @@
             background: rgba(45, 31, 21, 1);
         }
         
-        /* New Styles for Keys Section */
+        /* New Styles for Keys & Articles Section */
         .keys-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -1057,7 +1059,7 @@
                 <div class="nav-tabs">
                     <div class="nav-tab active" data-tab="counter">Mala Jap</div>
                     <div class="nav-tab" data-tab="premanand">Maharaj Ji</div>
-                    <div class="nav-tab" data-tab="chabiya">Keys</div>
+                    <div class="nav-tab" data-tab="articles">लेख</div> <div class="nav-tab" data-tab="chabiya">Keys</div>
                     <div class="nav-tab" data-tab="about">About Us</div>
                     <div class="nav-tab" data-tab="contact">Contact Us</div>
                     <div class="nav-tab" data-tab="privacy">Privacy</div>
@@ -1154,6 +1156,27 @@
                 </div>
             </div>
         </div>
+
+        <div class="content-section" id="articles-section">
+            <h2 class="premanand-title">भक्ति और ज्ञान के लेख</h2>
+            <div class="keys-grid">
+                
+                <div class="key-card" style="text-align: left; align-items: flex-start;">
+                    <h3 class="key-card-title">राधा नाम का महत्व और महिमा</h3>
+                    <p class="key-card-text">
+                        शास्त्रों और संतों की वाणी में 'राधा' नाम की महिमा का अपरंपार वर्णन है। यह केवल एक नाम नहीं, बल्कि प्रेम, भक्ति और दिव्यता का साक्षात स्वरूप है। 'रा' शब्द का अर्थ है 'देने वाली' और 'धा' का अर्थ है 'दौड़ने वाली'। जो भक्ति और प्रेम को देने के लिए दौड़ पड़ें, वही राधा हैं।
+                        <br><br>
+                        श्री कृष्ण स्वयं कहते हैं कि जो कोई भी उनके नाम से पहले राधा का नाम लेता है, वह उन्हें अत्यंत प्रिय हो जाता है। राधा नाम का जप कलियुग में सभी पापों और कष्टों से मुक्ति का सबसे सरल और प्रभावी मार्ग माना गया है। यह मन को शांत करता है, हृदय को शुद्ध करता है और भक्त को सीधे दिव्य प्रेम की अनुभूति कराता है। श्री प्रेमानंद महाराज जी जैसे संत भी निरंतर राधा नाम के जप पर ही बल देते हैं, क्योंकि यही भक्ति के सर्वोच्च शिखर तक पहुँचने की कुंजी है।
+                    </p>
+                </div>
+                <div class="key-card" style="text-align: left; align-items: flex-start;">
+                    <h3 class="key-card-title">[दूसरे आर्टिकल का शीर्षक यहाँ लिखें]</h3>
+                    <p class="key-card-text">
+                        [दूसरे आर्टिकल का पूरा टेक्स्ट यहाँ लिखें। AdSense के लिए कम से कम 500-600 शब्द लिखें।]
+                    </p>
+                </div>
+                </div>
+        </div>
         
         <div class="content-section" id="chabiya-section">
             <h2 class="premanand-title">भक्ति की चाबियां</h2>
@@ -1191,28 +1214,19 @@
             </div>
         </div>
 
-
         <div class="content-section" id="about-section">
-            <div class="info-card">
-                <h2 class="info-title">About Us</h2>
-                <p class="info-text">राधा नाम जप एक भक्ति प्लेटफॉर्म है जिसे प्रेम और समर्पण के साथ बनाया गया है ताकि राधा कृष्ण भक्ति के अभ्यासियों को डिजिटल साधनों के माध्यम से उनके आध्यात्मिक अभ्यास को बढ़ाने में मदद मिल सके।</p>
-                
-                <p class="info-text">हमारा मिशन प्रौद्योगिकी और आध्यात्मिकता को संयोजित करना है ताकि ऐसे उपकरण बनाए जा सकें जो आपकी भक्ति यात्रा का समर्थन करें बिना इसके सार से विचलित किए।</p>
-                
-                <div class="features">
-                    <div class="feature">
-                        <i class="fas fa-hands-praying"></i>
-                        <span>भक्ति के इरादे से बनाया गया</span>
-                    </div>
-                    <div class="feature">
-                        <i class="fas fa-code"></i>
-                        <span>आधुनिक वेब तकनीकों के साथ निर्मित</span>
-                    </div>
-                    <div class="feature">
-                        <i class="fas fa-globe"></i>
-                        <span>दुनिया भर के भक्तों के लिए सुलभ</span>
-                    </div>
-                </div>
+            <div class="info-card" style="max-width: 800px; margin: auto;">
+                <h2 class="info-title">हमारे बारे में (About Us)</h2>
+                <p class="info-text">
+                    "राधा नाम जप" वेबसाइट पर आपका स्वागत है। हमारा उद्देश्य भक्ति और आध्यात्मिकता के मार्ग पर चल रहे साधकों को एक डिजिटल मंच प्रदान करना है। इस भागदौड़ भरी जिंदगी में, हम अक्सर अपनी आध्यात्मिक जड़ों से दूर हो जाते हैं। यह वेबसाइट उसी संबंध को फिर से जोड़ने का एक छोटा सा प्रयास है।
+                </p>
+                <p class="info-text">
+                    <strong>[यहाँ अपनी कहानी लिखें: आपने यह वेबसाइट क्यों बनाई? आपकी प्रेरणा क्या थी? अपना नाम और छोटा सा परिचय दें।]</strong>
+                    उदाहरण के लिए: "मेरा नाम [आपका नाम] है और मैं कई वर्षों से श्री प्रेमानंद महाराज जी के उपदेशों से प्रेरित हूँ। मैंने महसूस किया कि राधा नाम के जाप को ट्रैक करने के लिए एक सरल और सुंदर साधन की आवश्यकता है, और इसी विचार ने इस वेबसाइट को जन्म दिया।"
+                </p>
+                <p class="info-text">
+                    हमारा मिशन टेक्नोलॉजी के माध्यम से लोगों को उनकी आध्यात्मिक यात्रा में सहायता करना है। हमें उम्मीद है कि यह डिजिटल जप माला आपके जीवन में शांति और आनंद लाएगी। राधे राधे!
+                </p>
             </div>
         </div>
 
@@ -1262,18 +1276,27 @@
         </div>
 
         <div class="content-section" id="privacy-section">
-            <div class="info-card">
-                <h2 class="info-title">Privacy</h2>
-                <p class="info-text">राधा नाम जप में, हम आपकी गोपनीयता को महत्व देते हैं और आपकी व्यक्तिगत जानकारी की सुरक्षा के लिए प्रतिबद्ध हैं।</p>
-                
-                <h3 class="info-title" style="font-size: 1.4rem; margin-top: 25px;">Data Repository</h3>
-                <p class="info-text">हम केवल आपके जाप डेटा को आपके डिवाइस पर स्थानीय रूप से संग्रहीत करते हैं। हम कोई व्यक्तिगत जानकारी एकत्र नहीं करते हैं जब तक कि आप इसे हमें ईमेल या अन्य संचार चैनलों के माध्यम से स्पष्ट रूप से प्रदान नहीं करते हैं।</p>
-                
-                <h3 class="info-title" style="font-size: 1.4rem; margin-top: 25px;">Data Usage</h3>
-                <p class="info-text">आपके डेटा का उपयोग केवल आपके जाप अनुभव को बढ़ाने के उद्देश्य से किया जाता है। हम आपके डेटा को किसी तीसरे पक्ष के साथ साझा नहीं करते हैं।</p>
-                
-                <h3 class="info-title" style="font-size: 1.4rem; margin-top: 25px;">Contact</h3>
-                <p class="info-text">यदि आपके पास हमारी गोपनीयता प्रथाओं के बारे में कोई प्रश्न हैं, तो कृपया हमसे <a href="mailto:princexharmaji@gmail.com" style="color: var(--gold);">princexharmaji@gmail.com</a> पर संपर्क करें.</p>
+            <div class="info-card" style="max-width: 800px; margin: auto;">
+                 <h2 class="info-title">गोपनीयता नीति (Privacy Policy)</h2>
+                <p class="info-text">
+                    "राधा नाम जप" में, हम आपकी गोपनीयता का सम्मान करते हैं। यह गोपनीयता नीति बताती है कि जब आप हमारी वेबसाइट का उपयोग करते हैं तो हम कौन सी जानकारी एकत्र करते हैं और इसका उपयोग कैसे किया जाता है।
+                </p>
+                <h3 class="info-title" style="font-size: 1.4rem; margin-top: 25px;">जानकारी जो हम एकत्र करते हैं</h3>
+                <p class="info-text">
+                    हम आपकी कोई भी व्यक्तिगत पहचान योग्य जानकारी (जैसे नाम, ईमेल) एकत्र नहीं करते हैं। आपका सारा जप डेटा (काउंट, माला, इतिहास) केवल आपके डिवाइस के ब्राउज़र (Local Storage) में ही संग्रहीत होता है। यह डेटा हमारे सर्वर पर नहीं भेजा जाता है।
+                </p>
+                <h3 class="info-title" style="font-size: 1.4rem; margin-top: 25px;">तृतीय-पक्ष सेवाएँ (Third-Party Services)</h3>
+                <p class="info-text">
+                    हमारी वेबसाइट विज्ञापन दिखाने के लिए Google AdSense का उपयोग कर सकती है। Google AdSense आपकी रुचियों के अनुसार विज्ञापन दिखाने के लिए कुकीज़ (Cookies) का उपयोग कर सकता है। आप Google की विज्ञापन सेटिंग्स पर जाकर इसे प्रबंधित कर सकते हैं। हमारी वेबसाइट पर अन्य तृतीय-पक्ष लिंक हो सकते हैं। हम उनकी गोपनीयता नीतियों के लिए ज़िम्मेदार नहीं हैं।
+                </p>
+                <h3 class="info-title" style="font-size: 1.4rem; margin-top: 25px;">नीति में परिवर्तन</h3>
+                <p class="info-text">
+                    हम भविष्य में अपनी गोपनीयता नीति को अपडेट कर सकते हैं। कोई भी बदलाव इस पेज पर पोस्ट किया जाएगा।
+                </p>
+                <p class="info-text">
+                    यदि आपके कोई प्रश्न हैं, तो कृपया हमसे <a href="mailto:princexharmaji@gmail.com" style="color: var(--gold);">princexharmaji@gmail.com</a> पर संपर्क करें।
+                    <br>अंतिम अपडेट: 17 सितंबर 2025
+                </p>
             </div>
         </div>
         
